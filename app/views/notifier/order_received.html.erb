@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pragprog Books Online Store</title>
+</head>
+
+￼<body id ="store"> 
+	<div id="banner">
+		<%= image_tag("logo.png") %>
+	</div>
+	<div id = "columns">
+		<div id  = "main">
+			<%= render @order.line_items %> 
+		</div>
+	</div>
+	</body>
+</html>
+

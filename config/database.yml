@@ -1,0 +1,12 @@
+development:
+   adapter: postgresql
+   encoding: unicode
+   database: depot  
+   username: postgres
+   password: password
+   
+test:
+    adapter: postgresql
+    database: testing_database   
+    username: postgres
+    password: password

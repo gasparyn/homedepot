@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gaspar Obimba Online Store</title>
+	<%= stylesheet_link_tag "scaffold" %>
+	<%= stylesheet_link_tag "store", :media => "all" %> 
+	<%= javascript_include_tag :defaults %>
+	<%= csrf_meta_tag %>
+</head>
+￼<body id="store"> 
+	<div id="banner">
+		<%= image_tag("logo.png") %>
+		<%= @page_title || "Pragmatic Bookshelf" %>
+    	<div id ="auth">
+			<% if session[:user_id] %>  
+		  		Hello There <%= link_to "#{current_user.name}", current_user %><br /> Not You?
+				<%= link_to 'Logout', logout_url %><br />
+			<%else%>
+		  		Got an Account? <%= link_to "Sign In", login_url %><br /> New Here?
+				<%= link_to 'Create an Account', new_user_account_url %><br />
+			<%end%>
+	 	</div>
+		
+	</div>
+
+<div id="columns">
+	
+	<div id="side"> 
+		<% if @cart %>
+			<%= hidden_div_if(@cart.line_items.empty?, :id => "cart") do %>
+				<%= render @cart %> 
+			<% end %>
+		<% end %>
+		<a href="http://www....">Home</a><br />
+		<a href="http://www..../faq">Questions</a><br /> 
+		<a href="http://www..../news">News</a><br />
+		<a href="http://www..../contact">Contact</a><br />
+		
+		<% if session[:user_id]&&current_user.is_store_admin? %> <br />
+		ADMIN PANEL
+			<%= link_to 'Orders', orders_path %><br /> 
+			<%= link_to 'Products', products_path %><br /> 
+			<%= link_to 'Users', users_path %><br /> <br />
+			<%= button_to 'Logout', logout_path, :method => :delete %> 
+		<% end %>
+	</div>
+  <div id="main">
+		<%= yield %> </div>
+	</div>
+</body>
+</html>
+

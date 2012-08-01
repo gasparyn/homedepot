@@ -1,0 +1,171 @@
+
+#banner {
+    background: none repeat scroll 0 0 #99CC99;
+    border-bottom: 2px solid;
+    border-radius: 10px 10px 10px 10px;
+    color: #228822;
+    font: small-caps 40px/40px "Times New Roman",serif;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+#banner img {
+    float: left;
+}
+#auth{
+	float: right;
+	font-size: small;
+}
+#columns {
+    background: none repeat scroll 0 0 #114411;
+    border-radius: 10px 10px 10px 10px;
+}
+#main {
+    background: none repeat scroll 0 0 white;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 17em;
+    padding-left: 2em;
+    padding-top: 4ex;
+}
+#side {
+    background: none repeat scroll 0 0 #114411;
+    float: left;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-top: 1em;
+    width: 16em;
+}
+#side a {
+    color: #BBFFBB;
+    font-size: small;
+}
+#store #notice {
+    background-color: #F0F0F0;
+    border: 2px solid red;
+    color: #000000;
+    font: bold smaller sans-serif;
+    margin-bottom: 2em;
+    padding: 1em;
+}
+#store h1 {
+    border-bottom: 3px dotted #7777DD;
+    color: #222266;
+    font: 150% sans-serif;
+}
+#product_list table {
+    border-collapse: collapse;
+}
+#product_list table tr td {
+    padding: 5px;
+    vertical-align: top;
+}
+#product_list .list_image {
+    height: 70px;
+    width: 60px;
+}
+#product_list .list_description {
+    width: 60%;
+}
+#product_list .list_description dl {
+    margin: 0;
+}
+#product_list .list_description dt {
+    color: #224444;
+    font-size: larger;
+    font-weight: bold;
+}
+#product_list .list_description dd {
+    margin: 0;
+}
+#product_list .list_actions {
+    font-size: x-small;
+    padding-left: 1em;
+    text-align: right;
+}
+#product_list .list_line_even {
+    background: none repeat scroll 0 0 #E0F8F8;
+}
+#product_list .list_line_odd {
+    background: none repeat scroll 0 0 #F8B0F8;
+}
+#store .entry {
+    border-bottom: 1px dotted #7777DD;
+    margin-top: 1em;
+    overflow: auto;
+}
+#store .title {
+    font-family: sans-serif;
+    font-size: 120%;
+}
+#store .entry img {
+    float: left;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    width: 80px;
+}
+#store .entry h3 {
+    color: #222277;
+    margin-bottom: 2px;
+    margin-top: 0;
+}
+#store .entry p {
+    margin-bottom: 0.8em;
+    margin-top: 0.5em;
+}
+#store .entry .price_line {
+    clear: both;
+    margin-bottom: 0.5em;
+}
+#store .entry .add_to_cart {
+    position: relative;
+}
+#store .entry .price {
+    color: #4444AA;
+    font-weight: bold;
+    margin-right: 2em;
+}
+#store .cart_title {
+    font: 120% bold;
+}
+#store .item_price, #store .total_line {
+    text-align: right;
+}
+#store .total_line .total_cell {
+    border-top: 1px solid #559955;
+    font-weight: bold;
+}
+#cart, #cart table {
+    color: white;
+    font-size: smaller;
+}
+#cart table {
+    border-bottom: 1px dotted #559955;
+    border-top: 1px dotted #559955;
+    margin-bottom: 10px;
+}
+.depot_form fieldset {
+    background: none repeat scroll 0 0 #EEFFEE;
+}
+.depot_form legend {
+    background: none repeat scroll 0 0 #114411;
+    color: #DDFFDD;
+    font-family: sans-serif;
+    padding: 0.2em 1em;
+}
+.depot_form label {
+    display: block;
+    float: left;
+    margin-right: 0.1em;
+    padding-top: 0.2em;
+    text-align: right;
+    width: 5em;
+}
+.depot_form select, .depot_form textarea, .depot_form input {
+    margin-left: 0.5em;
+}
+.depot_form .submit {
+    margin-left: 4em;
+}
+.depot_form div {
+    margin: 0.5em 0;
+}

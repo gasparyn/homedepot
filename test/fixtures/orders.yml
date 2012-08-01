@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: Dave Thomas
+  address: One Molly Street Waltham
+  email: dave@example.org
+  pay_method: Check
+
+two:
+  name: MyString
+  address: MyText
+  email: MyString
+  pay_method: MyString
